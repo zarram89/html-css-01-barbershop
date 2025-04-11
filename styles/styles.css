@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -42,7 +50,8 @@ body {
   text-transform: uppercase;
 }
 
-.button-light {
+.button-light
+.bitton-current {
   color: #242424;
   background-color: #ffffff;
 }
@@ -50,6 +59,12 @@ body {
 .page-header {
   color: #ffffff;
   background-color: #000000;
+}
+
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -63,6 +78,21 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-list {
+  width: 250px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #ffffff;
   background-color: #000000;
@@ -71,8 +101,26 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.advantages-item {
+  width: 277px;
 }
 
 .advantages-title {
@@ -83,16 +131,21 @@ body {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/index/bg-noisy.png");
 }
 
 .services {
+  width: 390px;
   text-transform: uppercase;
 }
 
 .services-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -108,7 +161,12 @@ body {
   color: #af7842;
 }
 
+.gallery {
+  width: 390px;
+}
+
 .gallery-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -116,10 +174,12 @@ body {
 }
 
 .contacts {
+  width: 350px;
   font-weight: 700;
 }
 
 .contacts-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700px;
@@ -145,7 +205,12 @@ body {
   text-transform: uppercase;
 }
 
+.appointment {
+  width: 430px;
+}
+
 .appointment-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -169,6 +234,11 @@ body {
   background-color: #242424;
   background-image: url("../images/bg-noisy.png");
   background-repeat: repeat;
+}
+
+.page-footer-container {
+  width: 940px;
+  padding: 0 70px;
 }
 
 .page-footer a {

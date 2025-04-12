@@ -122,146 +122,149 @@
             <button class="button" type="submit">Показать</button>
           </form>
 
-          <div class="sorting-container">
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
-            <a class="button button-light" href="catalog.html?view=list">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-            <a class="button" href="catalog.html?view=card">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
+          <div class="catalog-right-column">
+            <div class="sorting-container">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+              <a class="button button-light" href="catalog.html?view=list">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+              <a class="button" href="catalog.html?view=card">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </div>
+
+            <ul class="product-list">
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-1.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+                </a>
+                <b class="product-card-price">744 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-2.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
+                </a>
+                <b class="product-card-price">160 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-3.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                </a>
+                <b class="product-card-price">94 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-4.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</h3>
+                </a>
+                <b class="product-card-price">173 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-5.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
+                </a>
+                <b class="product-card-price">441 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html">
+                  <img class="product-card-image" src="images/catalog/catalog-6.jpg" width="220" height="200" alt="">
+                  <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
+                </a>
+                <b class="product-card-price">904 ₽</b>
+                <a class="product-card-button button" href="">Купить</a>
+              </li>
+            </ul>
+
+            <ul class="pagintation">
+              <li class="pagintation-item">
+                <a class="pagintation-link pagintation-prev pagintation-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagintation-item">
+                <a class="pagintation-link pagintation-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagintation-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagintation-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagintation-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagintation-link" href="#">5</a>
+              </li>
+              <li class="pagintation-item">
+                <a class="pagintation-link pagintation-next" href="#">
+                  <span class="visually-hidden">Слудующая страница</span>
+                </a>
+              </li>
+            </ul>
+            <button class="button pagination-show-more" type="button">Показать ещё</button>
           </div>
-
-          <ul class="product-list">
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-1.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
-              </a>
-              <b class="product-card-price">744 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-2.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
-              </a>
-              <b class="product-card-price">160 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-3.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
-              </a>
-              <b class="product-card-price">94 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-4.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</h3>
-              </a>
-              <b class="product-card-price">173 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-5.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
-              </a>
-              <b class="product-card-price">441 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/catalog/catalog-6.jpg" width="220" height="200" alt="">
-                <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
-              </a>
-              <b class="product-card-price">904 ₽</b>
-              <a class="product-card-button button" href="">Купить</a>
-            </li>
-          </ul>
-
-          <ul class="pagintation">
-            <li class="pagintation-item">
-              <a class="pagintation-link pagintation-prev pagintation-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagintation-item">
-              <a class="pagintation-link pagintation-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagintation-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagintation-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagintation-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagintation-link" href="#">5</a>
-            </li>
-            <li class="pagintation-item">
-              <a class="pagintation-link pagintation-next" href="#">
-                <span class="visually-hidden">Слудующая страница</span>
-              </a>
-            </li>
-          </ul>
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
-
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <section class="page-footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts-logo" src="images/icons/logo-short.svg" width="187" height="24" alt="Логотип Барбершопа «Бородинский»">
-        <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        </address>
-        <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
-      </section>
-      <section class="newsletter">
-        <h2 class="page-footer-title">Получайте лучшие предложения</h2>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com">
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
-        </form>
-      </section>
-      <section class="footer-social">
-        <h2 class="page-footer-title">Давайте дружить</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-        </ul>
-        <p class="about-text">
-          Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">htmlacademy</a>
-        </p>
-      </section>
+      <div class="page-footer-container">
+        <section class="page-footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <img class="footer-contacts-logo" src="images/icons/logo-short.svg" width="187" height="24" alt="Логотип Барбершопа «Бородинский»">
+          <address class="footer-contacts-address">
+            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </address>
+          <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
+        </section>
+        <section class="newsletter">
+          <h2 class="page-footer-title">Получайте лучшие предложения</h2>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email">Email</label>
+            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@example.com">
+            <button class="button newsletter-button" type="submit">
+              <span class="visually-hidden">Отправить</span>
+            </button>
+          </form>
+        </section>
+        <section class="footer-social">
+          <h2 class="page-footer-title">Давайте дружить</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+          </ul>
+          <p class="about-text">
+            Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">htmlacademy</a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 

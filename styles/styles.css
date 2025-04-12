@@ -67,6 +67,11 @@ body {
   margin: 0 auto;
 }
 
+.navigation-logo {
+  width: 138px;
+  margin-right: 100px;
+}
+
 .navigation-link {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   line-height: 22px;
@@ -237,8 +242,14 @@ body {
 }
 
 .page-footer-container {
+  display: flex;
   width: 940px;
-  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.page-footer-contacts {
+  width: 200px;
+  margin-right: 130px;
 }
 
 .page-footer a {
@@ -289,6 +300,11 @@ body {
   text-transform: uppercase;
 }
 
+.footer-social {
+  width: 190px;
+  margin-left: auto;
+}
+
 .inner-header-title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
@@ -303,6 +319,19 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-right-column {
+  width: 700px;
 }
 
 .catalog-filter-title {

@@ -484,12 +484,13 @@ body {
   list-style-type: none;
 }
 
-.pagintaion-item:not(:last-child) {
+.pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
 .pagintation-link {
   display: block;
+  box-sizing: border-box;
   width: 50px;
   height: 44px;
   padding: 14px 20px;

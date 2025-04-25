@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsansnarrow-700.woff2) format(woff2);
+  src: url(../fonts/ptsansnarrow-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
 }
 
-.button-light
+.button-light,
 .bitton-current {
   color: #242424;
   background-color: #ffffff;
@@ -144,8 +144,7 @@ body {
 
 .logo {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
 }
 
 .advantages {
@@ -199,8 +198,7 @@ body {
 }
 
 .services-title {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -222,8 +220,7 @@ body {
 }
 
 .gallery-title {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -237,12 +234,11 @@ body {
 }
 
 .contacts-title {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
-  font-weight: 700px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -270,8 +266,7 @@ body {
 }
 
 .appointment-title {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -280,7 +275,29 @@ body {
 }
 
 .appointment-form {
-  color: #595959;
+  display: grid;
+  grid-template-columns: 114px 74px 208px;
+  gap: 19px 17px;
+}
+
+.appointment-form-name {
+  grid-column: 1/-1;
+}
+
+.appointment-submit {
+  grid-column: 1/-1;
+  justify-self: start;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.field-group label,
+.field-group input {
+  display: block;
 }
 
 .form-label {
@@ -294,7 +311,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #242424;
-  background-image: url("../images/bg-noisy.png");
+  background-image: url("../images/index/bg-noisy.png");
   background-repeat: repeat;
 }
 

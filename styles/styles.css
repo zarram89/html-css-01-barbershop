@@ -51,6 +51,8 @@ body {
 
 
 .button {
+  display: inline-block;
+  padding: 14px 20px;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -58,12 +60,18 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  border: none;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button + .button {
+  margin-left: 16px;
 }
 
 .button-light,
-.bitton-current {
+.button-current {
   color: #242424;
   background-color: #ffffff;
 }
@@ -206,9 +214,17 @@ body {
 }
 
 .services-list {
+  margin: 0 0 30px;
+  padding: 0;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+  list-style-type: none;
+}
+
+.services-item {
+  display: flex;
+  margin-bottom: 22px;
 }
 
 .services-price {
@@ -247,10 +263,15 @@ body {
 }
 
 .contacts-subtitle {
+  margin: 22px 0 8px;
   font-size: 20px;
   line-height: 28px;
   color: #af7842;
   text-transform: uppercase;
+}
+
+.contacts-address-text {
+  margin: 8px 0;
 }
 
 .contacts-phone {
@@ -259,6 +280,10 @@ body {
   color: #242424;
   text-decoration-line: underline;
   text-transform: uppercase;
+}
+
+.contacts-navigation {
+  margin: 21px 0;
 }
 
 .appointment {
@@ -346,7 +371,23 @@ body {
   text-transform: uppercase;
 }
 
+.footer-contacts {
+  width: 200px;
+  margin-right: 130px;
+}
+
+.footer-contacts-logo {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.footer-about-text {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
 .footer-contacts-address {
+  margin-bottom: 16px;
   font-style: normal;
 }
 
@@ -384,7 +425,7 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 28px;
   padding: 0;
   list-style-type: none;
 }
@@ -547,7 +588,7 @@ body {
   margin-left: auto;
 }
 
-.pagintation-current {
+.pagination-current {
   color: #242424;
   background-color: #ffffff;
 }
